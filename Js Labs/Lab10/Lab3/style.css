@@ -1,0 +1,20 @@
+#container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 95vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  border: 2px solid antiquewhite;
+  border-radius: 10px;
+  width: 15%;
+  height: 30%;
+}
+.photo,
+.text {
+  text-align: center;
+}

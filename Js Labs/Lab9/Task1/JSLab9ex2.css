@@ -1,0 +1,134 @@
+#container{
+    position: relative;
+    bottom: 70px;
+}
+body{
+    background-color: rgb(162, 157, 240);
+}
+#bgd{
+    width: 600px;
+    height: 300px;
+    position: relative;
+    left:350px;
+    top:100px;
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+    align-content: center;
+    box-shadow: 3px 3px 7px rgb(116, 102, 245);
+}
+#clock{
+    background-color: rgb(162, 157, 240);
+    width:450px;
+    height:150px;
+    position: relative;
+    top:75px
+
+}
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('digital-7.ttf');
+   }
+
+#week{
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+}
+#week > div {
+    color: rgb(2, 2, 29);
+    opacity: 0.25;
+    font-family: cursive;
+}
+#watch{
+    position: relative;
+    left: 105px;
+    top:30px;
+    font-family: 'digital-clock-font';
+    font-size: 70px;
+
+}
+#icon{
+    position: relative;
+    left: 25px;
+    top:15px
+}
+
+#digital{
+    position: relative;
+    left:500px;
+    opacity: 0.4;
+    top:115px;
+    font-family:'Brush Script MT';
+    font-size: 70px;
+    }
+#m{
+    position: relative;
+    left:400px;
+    bottom: 10px;
+    color:rgb(2, 2, 29) ;
+}
+#setAlarm{
+    color: beige;
+    font-size: 30px;
+    font-family: cursive;
+    width: 250px;
+    height: 100px;
+    background-color: rgba(10, 10, 56, 0.596);
+    border-color: blueviolet;
+    position: relative;
+    left:530px;
+    top:140px;
+}
+#popUp{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: rgb(224, 210, 210);
+    bottom:450px;
+    left: 280px;
+   
+    flex-direction: column;
+    justify-content: space-around;
+    display:none
+}
+#setA{
+    text-align: center;
+    color: rgb(88, 9, 107);
+    font-family: cursive;
+    font-size: 30px;
+}
+#adj{
+    display: flex;
+    justify-content: space-around;
+}
+#adj > div{
+    padding: 15px;
+    background-color: rgb(197, 197, 238);
+    text-align: center;
+    color: rgb(88, 9, 107);
+    font-family: cursive;
+    font-size: 15px;
+}
+#btns{
+    display: flex;
+    justify-content: space-around;
+    }
+#btns > button{
+    width: 120px;
+    height: 70px;
+    background-color: rgb(102, 102, 228);
+    border-radius: 0px;
+    border-style:none;
+    color:white;
+    font-family: cursive;
+    font-size: 18px;
+}
+input{
+    width: 70px;
+    height: 40px;
+    border-style: none;
+    margin:10px ;
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="f" action="/action_page.php" method="get" onsubmit="check()">
+        <div id ="d">
+        
+        <input class="i" type="text"  name="fname" placeholder="Username"><br>
+        
+        <input class="i" type="password"  name="lname"  placeholder="Enter Password"><br>
+        
+        <input type="submit" id="btn" value="LOGIN">
+       
+      </form> 
+    </div>
+
+    <script>
+        document.body.style.background = "green";
+        var f = document.getElementById("f");
+        f.style.background = "white";
+        f.style.width ="35%";
+        f.style.height ="500px";
+        f.style.margin ="auto";
+
+        var d = document.getElementById("d");
+        d.style.marginLeft="28%";
+        d.style.paddingTop="25%";
+
+        var input = document.getElementsByClassName("i");
+        for(let i=0;i<input.length;i++)
+        {
+        input[i].style.backgroundColor = "aliceblue";
+        input[i].style.width="250px";
+        input[i].style.height="50px";
+        input[i].style.marginTop="10px"
+        }
+
+        var btn = document.getElementById("btn");
+        btn.style.width="256px";
+        btn.style.height="50px";
+        btn.style.backgroundColor="green"
+        btn.style.color="white";
+        btn.style.marginTop="10px"
+        //var x = input[0].getAttribute("value");
+        function check() {
+
+            if(input[0].value=="admin" && input[1].value=="123")
+            {
+                alert("Welcome")
+            }
+            else
+            {
+                alert("not registered")
+            }
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

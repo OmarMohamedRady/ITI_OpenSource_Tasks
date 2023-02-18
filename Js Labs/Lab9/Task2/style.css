@@ -1,0 +1,38 @@
+.container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height:100vh;
+}
+
+.child{
+    width: 30%; 
+    height: 50%; 
+    background-color: rgb(81, 144, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 300px;
+}
+#two{
+    height: 70%;
+    border: 10px solid gainsboro;
+    
+}
+#one , #three{
+    opacity: 0.5;
+}
+
+
+
+
+#prev , #next{
+    
+    background-color: gainsboro;
+    border: 5px solid gainsboro;
+    border-radius: 50%;
+    font-size: 50px;
+    color: beige;
+}
+  

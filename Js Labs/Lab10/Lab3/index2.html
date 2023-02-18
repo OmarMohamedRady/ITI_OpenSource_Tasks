@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--<div class="txt">
+      <img id="f" alt="Error" />
+      <h1 id="email"></h1>
+    </div>
+
+    <div class="txt">
+      <img id="f" alt="Error" />
+      <h1 id="email"></h1>
+    </div>
+
+    <div class="txt">
+      <img id="f" alt="Error" />
+      <h1 id="email"></h1>
+    </div>
+
+    <div class="txt">
+      <img id="f" alt="Error" />
+      <h1 id="email"></h1>
+    </div>
+
+    <div class="txt">
+      <img id="f" alt="Error" />
+      <h1 id="email"></h1>
+    </div>
+
+    <div class="txt">
+      <img id="f" alt="Error" />
+      <h1 id="email"></h1>
+    </div>-->
+    <div id="container"></div>
+
+    <script>
+      var container = document.getElementById("container");
+      async function getText(url) {
+        let x = await fetch(url);
+        let data = await x.json();
+        console.log(data.data);
+        for (let i = 0; i < data.data.length; i++) {
+          var newDiv = document.createElement("div");
+          newDiv.classList.add("content");
+          newDiv.innerHTML = `<div class ="photo" "> <img height ="120px"> </div>
+                                <h5 class = "text" ></h5>  `;
+          newDiv.children[0].children[0].setAttribute(
+            "src",
+            data.data[i].avatar
+          );
+
+          newDiv.children[1].innerHTML = data.data[i].email;
+          container.appendChild(newDiv);
+        }
+      }
+      /* var btn = document.getElementById("btn");
+    var btn1 = document.getElementById("btn1");
+    var txt = document.getElementsByClassName("txt");
+    var f = document.getElementById("f");
+    var email = document.getElementById("email");
+ 
+    async function getText(url) {
+      let x = await fetch(url);
+      let y = await x.json();
+      console.log(y.data);
+      
+      for (let i = 0; i < y.data.length; i++) {
+       
+        txt[i].children[0].setAttribute("src", y.data[i].avatar);
+        txt[i].children[1].innerHTML = y.data[i].email;
+        
+      }
+     
+    }
+*/
+      getText(" https://reqres.in/api/users?page=2");
+    </script>
+  </body>
+</html>

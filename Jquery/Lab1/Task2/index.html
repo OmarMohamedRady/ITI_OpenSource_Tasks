@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="width:150px;">
+            <img src="1.png" alt="Error" width="75px" height="75px">
+            <div style= "width: 200px; display: none; ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eligendi repellendus laboriosam vero exercitationem
+                 repellat laudantium natus ut enim corrupti illum porro,
+                  accusantium error soluta voluptatem dignissimos sit ducimus quidem.</div>
+        </div>
+
+        <div style="width:150px;">
+            <img src="2.jpg" alt="Error"  width="75px" height="75px">
+            <div style= "width: 200px; display: none;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eligendi repellendus laboriosam vero exercitationem
+                 repellat laudantium natus ut enim corrupti illum porro,
+                  accusantium error soluta voluptatem dignissimos sit ducimus quidem.</div>
+        </div>
+
+        <div style="width:150px;">
+            <img src="3.jpg" alt="Error"  width="75px" height="75px">
+            <div style= "width: 200px; display: none;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eligendi repellendus laboriosam vero exercitationem
+                 repellat laudantium natus ut enim corrupti illum porro,
+                  accusantium error soluta voluptatem dignissimos sit ducimus quidem.</div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+        
+    $("img").on("click",function(){
+        $(this).next().slideToggle(2000) ;
+})
+
+    </script>
+
+    
+</body>
+</html>
