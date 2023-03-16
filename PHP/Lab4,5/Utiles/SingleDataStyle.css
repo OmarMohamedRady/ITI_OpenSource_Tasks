@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(192, 192, 192);
+  height: 95vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+.data {
+  margin-left: 15px;
+}
