@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Apr 02, 2023 at 03:01 PM
+- Server version: 10.4.27-MariaDB
+- PHP Version: 8.2.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="grades" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="courses">
+                CREATE TABLE `courses` (
+                  `course_id` int(11) NOT NULL,
+                  `course_name` varchar(100) NOT NULL,
+                  `credit_hour` int(11) DEFAULT NULL,
+                  PRIMARY KEY (`course_id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+            </pma:table>
+            <pma:table name="male_student">
+                CREATE TABLE `male_student` (
+                  `student_id` int(11) NOT NULL,
+                  `email` varchar(50) DEFAULT NULL,
+                  `gender` enum(&#039;male&#039;,&#039;female&#039;) DEFAULT NULL,
+                  `birth_date` date DEFAULT NULL,
+                  `first_name` varchar(50) NOT NULL,
+                  `last_name` varchar(50) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+            </pma:table>
+            <pma:table name="student">
+                CREATE TABLE `student` (
+                  `student_id` int(11) NOT NULL,
+                  `email` varchar(50) DEFAULT NULL,
+                  `gender` enum(&#039;male&#039;,&#039;female&#039;) DEFAULT NULL,
+                  `birth_date` date DEFAULT NULL,
+                  `first_name` varchar(50) NOT NULL,
+                  `last_name` varchar(50) NOT NULL,
+                  PRIMARY KEY (`student_id`),
+                  UNIQUE KEY `email` (`email`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+            </pma:table>
+            <pma:table name="students_courses">
+                CREATE TABLE `students_courses` (
+                  `course_id` int(11) DEFAULT NULL,
+                  `student_id` int(11) DEFAULT NULL,
+                  `grade` int(11) DEFAULT NULL,
+                  `reg_data` date DEFAULT NULL,
+                  KEY `course_id` (`course_id`),
+                  KEY `student_id` (`student_id`),
+                  CONSTRAINT `students_courses_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`course_id`),
+                  CONSTRAINT `students_courses_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'grades'
+    -->
+    <database name="grades">
+        <!-- Table courses -->
+        <table name="courses">
+            <column name="course_id">1</column>
+            <column name="course_name">database</column>
+            <column name="credit_hour">4</column>
+        </table>
+        <!-- Table male_student -->
+        <table name="male_student">
+            <column name="student_id">1</column>
+            <column name="email">omarmoa=hamed@gmail.com</column>
+            <column name="gender">male</column>
+            <column name="birth_date">1997-10-01</column>
+            <column name="first_name">omar</column>
+            <column name="last_name">mohamed</column>
+        </table>
+        <table name="male_student">
+            <column name="student_id">2</column>
+            <column name="email">ahmedmohamed@gmail.com</column>
+            <column name="gender">male</column>
+            <column name="birth_date">1998-11-01</column>
+            <column name="first_name">ahmed</column>
+            <column name="last_name">mohamed</column>
+        </table>
+        <!-- Table student -->
+        <table name="student">
+            <column name="student_id">1</column>
+            <column name="email">omarmoa=hamed@gmail.com</column>
+            <column name="gender">male</column>
+            <column name="birth_date">1997-10-01</column>
+            <column name="first_name">omar</column>
+            <column name="last_name">mohamed</column>
+        </table>
+        <table name="student">
+            <column name="student_id">2</column>
+            <column name="email">ahmedmohamed@gmail.com</column>
+            <column name="gender">male</column>
+            <column name="birth_date">1998-11-01</column>
+            <column name="first_name">ahmed</column>
+            <column name="last_name">mohamed</column>
+        </table>
+        <table name="student">
+            <column name="student_id">3</column>
+            <column name="email">mariammohamed@gmail.com</column>
+            <column name="gender">female</column>
+            <column name="birth_date">2000-11-01</column>
+            <column name="first_name">mariam</column>
+            <column name="last_name">mohamed</column>
+        </table>
+        <!-- Table students_courses -->
+    </database>
+</pma_xml_export>
