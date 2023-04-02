@@ -1,0 +1,148 @@
+<Library location="Alex" description="Library" librarian="Mr-AA">
+    <book title="Book1" ISBN="12345">
+        <author>
+            <name>
+                <fname>Omar</fname>
+                <lname>Mohamed</lname>
+            </name>
+        </author>
+        <preface>
+            This is book1
+        </preface>
+        <parts>
+            <part title="Part1">
+                <chapters>
+                    <chapter title="ch1">
+                        <summary>summary</summary>
+                        <sections>
+                            <section title="Section 1">
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p>
+                            </section>
+                            <section title="Section 2">
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p>
+                                
+                            </section>
+                        </sections>
+                    </chapter>
+                    <chapter title="ch2">
+                        <summary>summary</summary>
+                        <sections>
+                            <section title="Section 1">
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p> 
+                            </section>
+                            <section title="Section 2">
+                                <p>paragraph 01</p>
+                                <p>paragraph 02</p>
+                                <p>paragraph 03</p>
+                               
+                            </section>
+                        </sections>
+                    </chapter>
+                </chapters>
+            </part>
+            <part  title="Part2">
+                <chapters>
+                    <chapter title="ch2">
+                        <summary>summary </summary>
+                        <sections>
+                            <section title="Section 1">
+                               
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p>
+                               
+                            </section>
+                            <section title="Section 2">
+                               
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p>
+                                
+                            </section>
+                        </sections>
+                    </chapter>
+                </chapters>
+            </part>
+        </parts>
+    </book>
+    
+
+    <book title="Book2" ISBN="123">
+        <author>
+            <name>
+                <fname>Omar</fname>
+                <lname>Mohamed</lname>
+            </name>
+        </author>
+        <preface>
+            This is book2
+        </preface>
+        <parts>
+            <part title="Part1">
+                <chapters>
+                    <chapter title="ch1">
+                        <summary>summary</summary>
+                        <sections>
+                            <section title="Section 1">
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p>
+                            </section>
+                            <section title="Section 2">
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p>
+                                
+                            </section>
+                        </sections>
+                    </chapter>
+                    <chapter title="ch2">
+                        <summary>summary</summary>
+                        <sections>
+                            <section title="Section 1">
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p> 
+                            </section>
+                            <section title="Section 2">
+                                <p>paragraph 01</p>
+                                <p>paragraph 02</p>
+                                <p>paragraph 03</p>
+                               
+                            </section>
+                        </sections>
+                    </chapter>
+                </chapters>
+            </part>
+            <part  title="Part2">
+                <chapters>
+                    <chapter title="ch2">
+                        <summary>summary </summary>
+                        <sections>
+                            <section title="Section 1">
+                               
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p>
+                               
+                            </section>
+                            <section title="Section 2">
+                               
+                                <p>paragraph 1</p>
+                                <p>paragraph 2</p>
+                                <p>paragraph 3</p>
+                                
+                            </section>
+                        </sections>
+                    </chapter>
+                </chapters>
+            </part>
+        </parts>
+    </book>
+</Library>

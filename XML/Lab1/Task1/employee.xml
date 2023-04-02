@@ -1,0 +1,45 @@
+<?xml-stylesheet type="text/css" href="employee.css"?>
+
+<employees>
+	<employee>
+		<name>omar</name>
+		<phones>
+			<phone type="home">03591522</phone>
+			<phone type="mobile">01065897526</phone>
+		</phones>
+		<addresses>
+			<address>
+				<street>st1,</street> 
+				<buildingNumber>no1,</buildingNumber> 
+				<Region>campshezar,</Region> 
+				<city>Alex,</city> 
+				<country>Egypt.</country>
+			</address> 
+			<address>
+				<street>st2,</street> 
+				<buildingNumber>no2,</buildingNumber> 
+				<Region>sidibashr,</Region> 
+				<city>Alex,</city> 
+				<country>Egypt.</country>
+			</address>
+		</addresses>
+		<email>omar@gmail.com</email>
+	</employee>
+	<employee>
+		<name>mohamned</name>
+		<phones>
+			<phone type="home">03125985</phone>
+			<phone type="mobile">0102359855</phone>
+		</phones>
+		<addresses>
+			<address>
+				<street>st1,</street> 
+				<buildingNumber>no1,</buildingNumber> 
+				<Region>AlMndra,</Region> 
+				<city>Alex,</city> 
+				<country>Egypt.</country>
+			</address> 
+		</addresses>
+		<email>mohamned@gmail.com</email>
+	</employee>
+</employees>
