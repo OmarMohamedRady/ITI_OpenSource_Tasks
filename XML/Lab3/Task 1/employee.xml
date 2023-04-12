@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="emp.xsd">
+	<employee>
+		<name>omar</name>
+		<phones>
+			<phone type="home">1234567895</phone>
+		</phones>
+		<addresses>
+			<address>
+				<street>tram</street>
+				<building_no>5</building_no>
+				<region>ibrahimia</region>
+				<city>Alex</city>
+				<country>Egypt</country>
+			</address>
+		</addresses>
+		<email>omar@gmail.com</email>
+	</employee>
+	<employee>
+		<name>mohamed</name>
+		<phones>
+			<phone type="home">1478523699</phone>
+		</phones>
+		<addresses>
+			<address>
+				<street>mammfess</street>
+				<building_no>10</building_no>
+				<region>sidi bashr</region>
+				<city>Alex</city>
+				<country>Egypt</country>
+			</address>
+		</addresses>
+		<email>mohamed@gmail.com</email>
+	</employee>
+</employees>

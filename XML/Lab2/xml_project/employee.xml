@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+  <employee>
+    <id>6435d35d55982</id>
+    <name>omar</name>
+    <email>omar@gmail.com</email>
+    <phone>123852753951</phone>
+    <address>Ibrahimia</address>
+  </employee>
+  <employee>
+    <id>6435d477d0c0a</id>
+    <name>ahmed</name>
+    <email>ahmedr@gmail.com</email>
+    <phone>123852753951</phone>
+    <address>Ibrahimia</address>
+  </employee>
+  <employee>
+    <id>6435d51a8873f</id>
+    <name>boda</name>
+    <email>boda@gmail.com</email>
+    <phone>852</phone>
+    <address>Ibrahimia</address>
+  </employee>
+</employees>
