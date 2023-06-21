@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-body">
+    <h1 class="card-title mb-4"> <%=  @book.name %> </h1>
+    <p class="card-text">book description: <%= @book.description %> </p>
+    <p class="card-text"> book price: <%= @book.price %> </p>
+    <p class="card-text">book image: <%= @book.image %> </p>
+
+    <ul class="list-inline">
+      <li class="list-inline-item"><%= link_to "Edit", edit_book_path(@book), class: "btn btn-sm btn-secondary" %></li>
+      <li class="list-inline-item"><%= link_to "Destroy", book_path(@book), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "btn btn-sm btn-danger"%></li> 
+    </ul>
+  </div>
+</div>
+
+
+
